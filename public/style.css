@@ -1,0 +1,35 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+}
+
+.container {
+  margin-left: 175px; 
+  position: relative;
+  
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 5px;
+  width: 175px;
+}
+
+.toolbar img {
+  
+  width: 100px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.hide {
+  visibility: hidden;
+}

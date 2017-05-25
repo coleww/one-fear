@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ONE FEAR</title>
+    <meta name="description" content="">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="one fear meme generator" />
+  <meta name="author" content="Cole Sea">
+  <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="public/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <canvas id="doItForHer" width="936" height="411"></canvas>
+    </div>
+    
+    <div class="toolbar">
+      
+      <h1>
+        ONE FEAR
+      </h1>
+      <div>
+        click to upload an image OR enter text (definitely don't do both lol)
+        <br/>
+        made by <a href="https://cole.money">cole sea</a> [<a href="https://github.com/coleww/one-fear">source code</a>]
+      </div>
+      <input type="file" id="upload" multiple="true" style="display: none;" />
+<!--    TODO: move this onclick into JS    -->
+      <input type="button" value="upload" onclick="document.getElementById('upload').click();" />
+      <input type="text" placeholder="type here!" class="texty"/>
+      <button class="download">download</button>
+      <br/>
+      <ul id="sortable">
+      </ul>
+      
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="vendor/canvas-toBlob.js"></script>
+    <script src="vendor/filesaver.js"></script>
+    <script src="public/client.js"></script>
+
+  </body>
+</html>
